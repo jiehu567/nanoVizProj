@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="./js/d3.v3.min.js"></script>
+      <script src="./js/dimple.v2.0.0.min.js"></script>
+      <script src="./js/attr_init.js"></script>
+</head>
+
+  
+<body>
+    <div class="container">
+    <div class="row">
+      <section id="content" class="col-md-12"></section>
+        <script type="text/javascript">
+            var svg = dimple.newSvg(".container", 590, 400);
+            d3.csv("./data/corr_data.csv", draw_line_chart);
+
+          </script>
+    </div>
+  </div>
+    
+    
+    
+</body>  
+
+</html>
+
+
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="./js/d3.v3.min.js"></script>
+    <script src="./js/dimple.v2.0.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    
+    <script src="./js/hor_bar.js"></script>
+    
+</head>
+    
+<body>
+
+    <h2> What attributes associates with Rating?</h2>
+    
+            
+            <!-- Overall correlation to overall ratings, sort them -->
+            <div id="chartContainer">
+                
+              <script type="text/javascript">
+                d3.csv("./data/bar_data_1.csv", draw_hor_bar);
+              </script>
+            </div>
+            
+            <!-- 1 bar plot to compare filter left foot vs. right food, what's most important attributes -->
+    
+            <div class="copy">
+                <p>The bar plot show how strong each of the attributes of a soccer player associates with overall rating in general. We can see: reaction, potential, age, short_passing, and long_passion are top 5 indicators for a high-rating soccer player. The height, however, performs pretty low correlation to overall ratings.</p>
+                <p>
+                If mouseover the bar, we can see how the types of attributes distributed. (The types are defined by <a href="http://sofifa.com/players/top"> EA FIFA</a>).
+                </p>
+                <ul>
+                  <li>Personality attributes, like potential and age, are strongest indicator to overall rating</li>
+                  <li>Power, mentality and skill attributes are more significant to indicate overall rating</li>
+                  <li>Defending attributes locate at bottom of plot. They are less attractive</li>
+                </ul>
+            </div>
+
+
+
+    
+</body>
+</html> 
